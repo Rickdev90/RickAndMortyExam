@@ -1,0 +1,2 @@
+# RickAndMortyExam
+Developed with SwiftUI
