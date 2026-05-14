@@ -31,5 +31,6 @@ struct FavoriteButton: View {
             )
         }
         .buttonStyle(.plain)
+        .accessibilityIdentifier("Favorite")
     }
 }

@@ -118,11 +118,10 @@ private extension CharacterDetailView {
                 favoritesPersistence.toggleFavorite(character:viewModel.character)}
 
             NavigationLink {
-                CharacterMapView(characterName: viewModel.character.name,
-                    coordinate:
-                        coordinateForCharacter(id: viewModel.character.id))
-            } label: {
-                HStack {
+                CharacterMapView(characterName: viewModel.character.name, coordinate: coordinateForCharacter(
+                        id:
+                        viewModel.character.id))
+            } label: { HStack {
                     Image(systemName: "map")
                     Text("View on Map")
                 }
@@ -134,6 +133,7 @@ private extension CharacterDetailView {
                 .clipShape(RoundedRectangle(cornerRadius: 16)
                 )
             }
+            .accessibilityIdentifier("ViewMap")
         }
     }
 
